@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TradingView Ticker Tape</title>
-    <style>
-        body {
-            /* Optional: Make the background transparent to blend with Notion */
-            background-color: transparent;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Prevent scrollbars if not needed */
-        }
-        .tradingview-widget-container {
-            width: 100%; /* Make it responsive to the iframe width */
-            height: 100%; /* Allow it to fill the iframe height */
-            margin: 0;
-            padding: 0;
-        }
-        /* The widget container itself has its own styling, so minimize external styles */
-    </style>
-</head>
-<body>
-
-<div class="tradingview-widget-container" style="margin: 0; padding-bottom: 0;">
-  <div class="tradingview-widget-container__widget" style="margin: 0; padding-bottom: 0;"></div>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Ticker tape by TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
-    {
-      "proName": "BITGET:BTCUSDT.P",
-      "title": "BTC"
-    },
     {
       "proName": "OANDA:XAUUSD",
       "title": "XAUUSD"
     },
     {
-      "proName": "OANDA:AUDJPY",
-      "title": "AUDJPY"
+      "proName": "BITGET:BTCUSDT.P",
+      "title": "BTC "
     },
     {
       "proName": "OANDA:GBPJPY",
       "title": "GBPJPY "
     },
     {
-      "proName": "OANDA:EURCAD",
-      "title": "EURCAD "
+      "proName": "OANDA:CADCHF",
+      "title": "CADCHF "
+    },
+    {
+      "proName": "OANDA:EURAUD",
+      "title": "EURAUD"
     },
     {
       "proName": "OANDA:CADJPY",
       "title": "CADJPY"
     },
     {
-      "proName": "OANDA:CADCHF",
-      "title": "CADCHF "
+      "proName": "OANDA:AUDJPY",
+      "title": "AUDJPY "
     }
   ],
   "colorTheme": "dark",
@@ -60,9 +42,10 @@
   "largeChartUrl": "",
   "isTransparent": false,
   "showSymbolLogo": true,
-  "displayMode": "adaptive"
+  "displayMode": "compact"
 }
   </script>
 </div>
+<!-- TradingView Widget END -->
 </body>
 </html>
